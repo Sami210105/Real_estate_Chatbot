@@ -1,4 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+env/
+venv/
+.venv/
 
-# Ignore dataset xlsx and Excel temp files
-/backend/data/*.xlsx
+# Django
+*.sqlite3
+media/
+staticfiles/
+
+# Node
+node_modules/
+build/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+*.key
+
+# Excel & dataset files
+backend/data/*.xlsx
+backend/data/~$*.xlsx
 ~$*.xlsx
