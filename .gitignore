@@ -1,0 +1,4 @@
+
+# Ignore dataset xlsx and Excel temp files
+/backend/data/*.xlsx
+~$*.xlsx
