@@ -47,26 +47,8 @@ LLM integration
 Custom prompt pipeline
 
 📁 Project Structure
-realestate-chatbot/
-│
-├── api/
-│   ├── views.py       # Analysis, comparison, chatbot API
-│   ├── urls.py
-│   └── data/realestate.xlsx
-│
-├── frontend/client/
-│   ├── public/        # Assets (bot.png, favicon, index.html)
-│   └── src/
-│       ├── components/
-│       │   ├── PriceChart.js
-│       │   ├── SummaryBox.js
-│       │   ├── DataTable.js
-│       │   ├── ChatInput.js
-│       │   └── Navbar.js
-│       ├── App.js
-│       └── index.js
-│
-└── README.md
+<img width="664" height="601" alt="image" src="https://github.com/user-attachments/assets/8b88b08e-bf73-4e06-9797-fe981e7a18c2" />
+
 
 ⚙️ Environment Variables
 
