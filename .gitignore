@@ -1,6 +1,6 @@
-# Python
+# === Python / Django ===
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
 *.pytest_cache/
@@ -8,26 +8,58 @@ env/
 venv/
 .venv/
 
-# Django
+# Django local files
 *.sqlite3
 media/
 staticfiles/
-
-# Node
-node_modules/
-build/
-dist/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Secrets
-.env
-.env.*
-*.key
-
-# Excel & dataset files
+collectstatic/
+# data files (keep what you listed)
 backend/data/*.xlsx
 backend/data/~$*.xlsx
 ~$*.xlsx
+
+# === Node / frontend ===
+node_modules/
+**/node_modules/
+# CRA / Vite / builds
+/build
+/dist
+/frontend/client/build
+/frontend/client/node_modules
+
+# npm/yarn/pnpm
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# caches and temp
+.npm/
+.cache/
+**/.cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Editors / IDEs ===
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# === Secrets / env ===
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# === Misc ===
+coverage/
+reports/
+.vagrant/
+*.class

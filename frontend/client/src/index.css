@@ -1,0 +1,77 @@
+/* Global reset & dark base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root{
+  --bg-0: #050507;
+  --bg-1: #0a0b0f;
+  --glass-bg: rgba(255,255,255,0.04);
+  --glass-border: rgba(255,255,255,0.07);
+  --accent: #7b61ff;
+  --accent-2: #768bdd;
+  --muted: rgba(255,255,255,0.6);
+  --muted-2: rgba(255,255,255,0.45);
+}
+
+html,body,#root {
+  height: 100%;
+  background: linear-gradient(180deg, rgba(6,6,8,1) 0%, rgba(12,12,14,1) 100%);
+  background-color: var(--bg-0);
+  color: #e9eef8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Inter', 'Fira Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* selection */
+::selection { background: rgba(123,97,255,0.22); color: #fff; }
+::-moz-selection { background: rgba(123,97,255,0.22); color: #fff; }
+
+/* custom scrollbar*/
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: rgba(255,255,255,0.02); border-radius: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(123,97,255,0.18); border-radius: 10px; border: 2px solid rgba(0,0,0,0.25); }
+::-webkit-scrollbar-thumb:hover { background: rgba(123,97,255,0.28); }
+
+/* small helpers */
+.container, .app-wrapper { padding-left: 1rem; padding-right: 1rem; }
+
+/* utility glass card that many components will use */
+.glass-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  backdrop-filter: blur(8px) saturate(110%);
+  -webkit-backdrop-filter: blur(8px) saturate(110%);
+  box-shadow: 0 6px 30px rgba(2,4,10,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+}
+
+/* smaller glow for emphasized tiles */
+.glass-card.emph {
+  border-radius: 14px;
+  border: 1px solid rgba(123,97,255,0.18);
+  box-shadow: 0 10px 40px rgba(123,97,255,0.07);
+}
+
+/* typography */
+h1, h2, h3, h4, h5, h6 { color: #f3f6fb; margin: 0; }
+p, label, span, small, .example-label { color: var(--muted); }
+
+/* Buttons (override bootstrap for dark glass button look) */
+.btn-primary, .example-btn {
+  background: linear-gradient(90deg, var(--accent), #5b9df0);
+  border: none;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(123,97,255,0.12), 0 1px 0 rgba(255,255,255,0.02) inset;
+  transition: transform .12s ease, box-shadow .12s ease, opacity .12s;
+}
+.btn-primary:hover, .example-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(123,97,255,0.14); }
+
+/* Links in footer */
+.footer-link { color: var(--muted); text-decoration: none; }
+.footer-link:hover { color: #fff; text-decoration: underline; }
+
+/* make card text readable on dark glass */
+.card .card-text { color: rgba(235, 242, 255, 0.92) !important; }
+.card .badge { opacity: 0.95; }
+

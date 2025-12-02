@@ -1,0 +1,57 @@
+/* glass-wrapper */
+.glass-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  padding: 6px;
+}
+
+/* header */
+.glass-table thead th.glass-th {
+  background: rgba(255, 255, 255, 0.06);
+  color: #eaf0ff;
+  border: none;
+  font-weight: 700;
+  text-align: left;
+  padding: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* rows */
+.glass-table tbody tr.glass-row {
+  transition: all 0.25s ease;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.glass-table tbody tr.glass-row:hover {
+  background: rgba(255,255,255,0.04);
+  transform: translateY(-2px);
+}
+
+/* cells */
+.glass-table tbody td.glass-td {
+  color: rgba(235, 240, 255, 0.9);
+  padding: 10px;
+  border: none;
+  font-size: 0.9rem;
+}
+
+/* subtle stripes */
+.glass-table tbody tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+/* scrollbar inside table */
+.glass-table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+.glass-table-wrapper::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.03);
+}
+.glass-table-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.18);
+  border-radius: 10px;
+}

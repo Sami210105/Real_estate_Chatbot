@@ -1,0 +1,86 @@
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  background: linear-gradient(180deg, rgba(6,6,8,0.9), rgba(12,12,14,0.95));
+  padding-bottom: 60px;
+}
+
+/* NAVBAR */
+.glass-navbar {
+  background: linear-gradient(90deg, rgba(10,10,12,0.6), rgba(8,8,10,0.4));
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  backdrop-filter: blur(6px);
+  padding: 0.5rem 0;
+}
+.brand-text { font-weight: 700; margin-left: 8px; color: #fff; letter-spacing: 0.2px; }
+.brand-icon { font-size: 1.2rem; margin-right: 6px; filter: drop-shadow(0 6px 10px rgba(0,0,0,0.6)); }
+
+/* HERO */
+.hero-section {
+  padding: 36px 0 12px;
+}
+.hero-content { color: #f6f8ff; margin-bottom: 18px; }
+.hero-title { font-size: clamp(1.6rem, 3.4vw, 2.4rem); letter-spacing: -0.6px; margin-bottom: 6px; }
+.hero-subtitle { color: var(--muted); font-size: 1rem; }
+
+/* chat box (glass) */
+.chat-box.glass-card {
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 8px;
+}
+.chat-box .form-control {
+  background: rgba(255,255,255,0.025) !important;
+  border: 1px solid rgba(255,255,255,0.04) !important;
+  color: #eef3ff !important;
+  box-shadow: none !important;
+}
+.chat-box .btn {
+  min-width: 120px;
+}
+
+/* example queries */
+.example-queries { display: flex; flex-direction: column; gap: 12px; color: var(--muted); }
+.example-buttons { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+.example-btn {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.04);
+  background: rgba(255,255,255,0.02);
+  color: var(--muted);
+  cursor: pointer;
+}
+
+/* results area */
+.results-container { padding-bottom: 20px; }
+.loading-box { padding: 28px; display:flex; align-items:center; gap:12px; justify-content:center; }
+.loading-text { color: var(--muted-2); margin-left: 8px; }
+
+/* Cards default (SummaryBox, PriceChart, DataTable) */
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #eef6ff;
+  border-radius: 12px;
+  box-shadow: 0 6px 30px rgba(3,6,12,0.6);
+}
+.card .card-title { color: #ffffff; font-weight:700; margin-bottom: 6px; }
+.card .card-body { padding: 18px; }
+
+/* Footer */
+.glass-footer {
+  margin-top: 30px;
+  padding: 18px 0;
+  background: linear-gradient(90deg, rgba(6,6,8,0.6), rgba(10,10,12,0.4));
+  border-top: 1px solid rgba(255,255,255,0.03);
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 1.4rem; }
+  .chat-box { padding: 12px; }
+  .example-btn { padding: 6px 10px; font-size: 0.9rem; }
+}
+
