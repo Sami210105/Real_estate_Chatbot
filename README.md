@@ -45,23 +45,3 @@ Custom API endpoints for:
 AI
 LLM integration
 Custom prompt pipeline
-
-📁 Project Structure
-<img width="664" height="601" alt="image" src="https://github.com/user-attachments/assets/8b88b08e-bf73-4e06-9797-fe981e7a18c2" />
-
-
-⚙️ Environment Variables
-
-Create .env inside backend folder:
-GROK_API_KEY=your_grok_key_here
-
-🚀 Run Locally
-Backend
-cd api
-pip install -r requirements.txt
-python manage.py runserver
-
-Frontend
-cd frontend/client
-npm install
-npm start
